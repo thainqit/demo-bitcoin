@@ -1,0 +1,48 @@
+<div id="container">
+  <div id="menu" style="display: none;">
+    <label>Select Time:</label>
+    <select name="select-time" id="select-time">
+      <option value="60" selected>60</option>
+      <option value="180">180</option>
+      <option value="300">300</option>
+      <option value="900">900</option>
+      <option value="1800">1800</option>
+      <option value="3600">3600</option>
+      <option value="14400">14400</option>
+      <option value="21600">21600</option>
+      <option value="43200">43200</option>
+      <option value="86400">86400</option>
+      <option value="259200">259200</option>
+      <option value="604800">604800</option>
+    </select>
+  </div>
+  <div id="chart" style="height: 600px; min-height: 600px; min-width: 310px"></div>
+  <div id="popup" class="ui-widget-content">
+    <div class="close-popup">X</div>
+    <ul class="tabs-menu">
+      <li class="current"><a href="#tab-1">SMA</a></li>
+      <li><a href="#tab-2">ロシーく足</a></li>
+      <li><a href="#tab-3">オーダー</a></li>
+      <li><a href="#tab-4">通知</a></li>
+    </ul>
+    <div class="tab">
+      <div id="tab-1" class="tab-content">
+        <p>SMAをクリックした価格</p>
+        <label>Value:</label> <input type="text" name="sma-value" class="sma-value" />
+      </div>
+      <div id="tab-2" class="tab-content">
+        <label>ローシク足を洗濯したところの価格:</label> <input type="text" name="candlestick-current" class="candlestick-current" /><br />
+        <label>終値:</label> <input type="text" name="candlestick-open" class="candlestick-open" /><br />
+        <label>高値:</label> <input type="text" name="candlestick-high" class="candlestick-high" /><br />
+        <label>安値:</label> <input type="text" name="candlestick-low" class="candlestick-low" /><br />
+        <label>終値:</label> <input type="text" name="candlestick-close" class="candlestick-close" /><br />
+      </div>
+      <div id="tab-3" class="tab-content">
+        <p>オーダー</p>
+      </div>
+      <div id="tab-4" class="tab-content">
+        <p>通知</p>
+      </div>
+    </div>
+  </div>
+</div>
